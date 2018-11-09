@@ -1,5 +1,5 @@
 const input = document.querySelector("input");
-const p = document.createElement('p');
+
 const form = document.querySelector('form');
 
 input.addEventListener('keypress', eventHandler);
@@ -8,13 +8,15 @@ input.addEventListener('keypress', eventHandler);
 
     if (event.which === 13) {
       if(input.value.length===0){
+    const p = document.createElement('p');
     p.innerText= "#FAIL you must enter a name";
     form.append(p);
     event.preventDefault();
 
     }
     else  {
-    p.innerText= "Hello " + input.value +  " nice to meet you!";
+    const p = document.createElement('p');
+    p.innerText= "Hello " + input.value +  " is it me your looking for?";
     form.append(p);
     event.preventDefault();
     document.querySelector("input").value = "";

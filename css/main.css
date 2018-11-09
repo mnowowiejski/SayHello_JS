@@ -1,0 +1,32 @@
+.red {
+    color:red;
+    text-transform: capitalize;
+
+}
+body {
+  background-color: #45636b;
+  color:white;
+  margin: 0 auto;
+  width: 70%;
+  text-align: center;
+}
+h1 {
+  font-family: impact;
+}
+footer {
+
+  clear:both;
+}
+input {
+    margin: 20px;
+    height: 30px;
+}
+
+fieldset {
+  border-style: none;
+}
+
+legend {
+  position: absolute;
+  left: -10000px;
+}
