@@ -1,34 +1,22 @@
+const input = document.querySelector("input");
+const p = document.createElement('p');
+const form = document.querySelector('form');
 
-
-  const input = document.querySelector("input");
-
-
-
-
-  input.addEventListener('keypress', eventHandler);
-
+input.addEventListener('keypress', eventHandler);
 
   function eventHandler (event) {
 
     if (event.which === 13) {
       if(input.value.length===0){
-    const p = document.createElement('p');
-    p.innerText= "you fail";
-    const form = document.querySelector('form');
+    p.innerText= "#FAIL you must enter a name";
     form.append(p);
     event.preventDefault();
 
     }
-
     else  {
-    const p = document.createElement('p');
     p.innerText= "Hello " + input.value +  " nice to meet you!";
-    const form = document.querySelector('form');
     form.append(p);
     event.preventDefault();
-
     }
-
-
   }
 }
