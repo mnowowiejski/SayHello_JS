@@ -17,6 +17,7 @@ input.addEventListener('keypress', eventHandler);
     p.innerText= "Hello " + input.value +  " nice to meet you!";
     form.append(p);
     event.preventDefault();
+    document.querySelector("input").value = "";
     }
   }
 }
