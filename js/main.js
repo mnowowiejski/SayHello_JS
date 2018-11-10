@@ -1,8 +1,9 @@
 const input = document.querySelector("input");
-
 const form = document.querySelector('form');
+const cursor = input.focus();
 
 input.addEventListener('keypress', eventHandler);
+
 
   function eventHandler (event) {
 
