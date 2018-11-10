@@ -13,6 +13,10 @@ body {
 h1 {
   font-family: impact;
 }
+
+img {
+  width: 50%;
+}
 footer {
 
   clear:both;

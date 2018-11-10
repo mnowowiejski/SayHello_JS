@@ -18,6 +18,8 @@ input.addEventListener('keypress', eventHandler);
     const p = document.createElement('p');
     p.innerText= "Hello " + input.value +  " is it me your looking for?";
     form.append(p);
+    var audio = new Audio('audio/Hello.mp3');
+    audio.play();
     event.preventDefault();
     document.querySelector("input").value = "";
     }
