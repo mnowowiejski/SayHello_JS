@@ -11,6 +11,7 @@ input.addEventListener('keypress', eventHandler);
       if(input.value.length===0){
     const p = document.createElement('p');
     p.innerText= "#FAIL you must enter a name";
+    p.classList.add('yellow');
     form.append(p);
     event.preventDefault();
 
